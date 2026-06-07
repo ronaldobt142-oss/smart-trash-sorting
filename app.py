@@ -88,7 +88,7 @@ st.markdown("---")
 # Load model AI
 @st.cache_resource
 def load_model():
-    return YOLO('/content/runs/detect/train/weights/best.pt')
+    return YOLO('best.pt')
 
 try:
     model = load_model()
